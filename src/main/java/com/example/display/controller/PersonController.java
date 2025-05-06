@@ -23,4 +23,9 @@ public class PersonController {
     public String helloWorld(){
       return "Hello world...i have successfully implement the cicd-piple";
     }
+
+    @GetMapping("/api/veryhappy")
+    public String Happy(){
+        return "Hello world...i have successfully implement the cicd-piple";
+    }
 }
