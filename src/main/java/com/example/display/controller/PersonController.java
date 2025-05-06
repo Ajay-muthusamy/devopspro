@@ -18,4 +18,9 @@ public class PersonController {
     public List<Person> getAllPersons() {
         return personService.getAllPersons();
     }
+
+    @GetMapping("/api/happy")
+    public String helloWorld(){
+      return "Hello world...i have successfully implement the cicd-piple";
+    }
 }
