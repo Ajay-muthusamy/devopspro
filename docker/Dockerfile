@@ -13,7 +13,7 @@ FROM tomcat:10-jdk21
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy WAR file from build stage to Tomcat
-COPY --from=build /devopspro/target/devopspro-v2.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=build /devopspro/target/display-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
