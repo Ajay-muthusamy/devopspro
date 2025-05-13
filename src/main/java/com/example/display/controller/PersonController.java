@@ -3,7 +3,6 @@ package com.example.display.controller;
 import com.example.display.model.Person;
 import com.example.display.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,7 +19,7 @@ public class PersonController {
         return personService.getAllPersons();
     }
 
-    @GetMapping("/check")
+    @GetMapping("/api/happy")
     public String helloWorld(){
       return "Hello world...i have successfully implement the cicd-piple";
     }
