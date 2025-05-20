@@ -21,7 +21,7 @@ public class PersonController {
 
     @GetMapping("/api/happy")
     public String helloWorld(){
-      return "Hello world...i have  implement the cicd-piple";
+      return "Hello world...i have  implement the cicd";
     }
 
     @GetMapping("/api/veryhappy")
